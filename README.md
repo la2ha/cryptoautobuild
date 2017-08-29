@@ -1,0 +1,2 @@
+# cryptoautobuild
+Automatically build cryptocoins
