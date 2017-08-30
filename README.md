@@ -30,6 +30,14 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev build-essential libtool autotoo
 
 Note: If you are on debian, you will also need to apt-get install libcanberra-gtk-module.
 
+wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
+
+tar -xzvf db-4.8.30.NC.tar.gz
+
+../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+
+sudo make install
+
 Step 2. 
 
 curl -Lo builder.sh https://raw.githubusercontent.com/crombiecrunch/cryptoautobuild/master/builder.sh
